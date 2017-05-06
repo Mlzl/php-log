@@ -15,15 +15,18 @@ class Constant
 
     const WARNING = 'WARNING';
 
-    const ERROR = 'ERROR';
+    const EXCEPTION = 'EXCEPTION';
 
     const ALERT = 'ALERT';
+
+    const ERROR = 'ERROR';
 
     const LEVEL = array(
         self::DEBUG =>  8,
         self::INFO  =>  16,
         self::WARNING=> 32,
-        self::ERROR =>  64,
-        self::ALERT =>  128,
+        self::ALERT =>  64,
+        self::EXCEPTION => 128,
+        self::ERROR =>  256,
     );
 }

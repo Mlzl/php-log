@@ -12,9 +12,11 @@ Interface ILog{
 
     public function warning($message);
 
-    public function error($message);
+    public function exception($message);
 
     public function alert($message);
+
+    public function error($message);
 
     public function startTransaction();
 

@@ -75,7 +75,12 @@ class Logger implements ILog {
     }
 
     public function error($message){
-        $this->preWrite($message,Constant::WARNING);
+        $this->preWrite($message,Constant::ERROR);
+    }
+
+    public function exception($message)
+    {
+        $this->preWrite($message,Constant::EXCEPTION);
     }
 
     public function alert($message){
