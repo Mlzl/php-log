@@ -1,26 +1,44 @@
-usage
-require_once 'Logger.php';
-$logger = new \PhpLog\Logger('log.txt');
-$logger->setLevel(\PhpLog\Library\Constant::INFO);
-    #beyond info will be record,debug would not be record
-$formatter = new \PhpLog\Library\Formatter('');
-$formatter->setFormat('[%type%][%date%][%pid%][%point%] %message%');
-    #type:log type.like debug,info
-    #date:date time
-    #point:log point
-    #pid:process id
-    #message:log info
-$formatter->setDateFormat('Y-m-d');
-    #date formate:look http://php.net/manual/zh/function.date.php
-$logger->setFormatter($formatter);
-    #set a format for logger
-$logger->startTransaction();
-    #if you start transaction,the log will be record on memory.the log will write file after the logger submit
-$logger->info('s');
-    # write [info] message
-$log->submit();
-    # submit your transaction
+--feature
+    ·multi-level
+        #debug,info,warning,exception,alert,error
+    ·transaction
+        #support transaction like databases
+    ·multi-opt-log-format
+        #look usage
+    ·multi-storage
+        #file,redis
+    .namespace
 
+--usage
+    -require_once 'Logger.php';
+    -$logger = new \PhpLog\Logger('log.txt');
+    -$logger->setLevel(\PhpLog\Library\Constant::INFO);
+        #beyond info will be record,debug would not be record
+    -$formatter = new \PhpLog\Library\Formatter('');
+    -$formatter->setFormat('[%type%][%date%][%pid%][%point%] %message%');
+        #type:log type.like debug,info
+        #date:date time
+        #point:log point
+        #pid:process id
+        #message:log info
+    -$formatter->setDateFormat('Y-m-d');
+        #date formate:look http://php.net/manual/zh/function.date.php
+    -$logger->setFormatter($formatter);
+        #set a format for logger
+    -$logger->startTransaction();
+        #if you start transaction,the log will be record on memory.the log will write file after the logger submit
+    -$logger->info('s');
+        # write [info] message
+    -$log->submit();
+        # submit your transaction
+
+
+--configuration
+    -PHP_LOG_STORAGE_TYPE
+        #where do you want your log to be stored
+    #if you handle is redis,you maybe config two constant in init.php
+        -PHP_LOG_REDIS_HOST
+        -PHP_LOG_REDIS_PORT
 
 
 
