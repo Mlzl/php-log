@@ -1,3 +1,4 @@
+#php-log version 1.0
 --feature
     ·multi-level
         #debug,info,warning,exception,alert,error
@@ -26,14 +27,15 @@
     -$logger->setFormatter($formatter);
         #set a format for logger
     -$logger->startTransaction();
-        #if you start transaction,the log will be record on memory.the log will write file after the logger submit
+        #if you start transaction,the log will be record on memory.the log will
+         write file after the logger submit
     -$logger->info('s');
         # write [info] message
     -$log->submit();
         # submit your transaction
 
-
 --configuration
+    #config in init.php
     -PHP_LOG_STORAGE_TYPE
         #where do you want your log to be stored
     #if you handle is redis,you maybe config two constant in init.php
