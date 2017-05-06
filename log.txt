@@ -1,0 +1,1 @@
+[INFO][2017-05-05][96876][/Users/ambi/project/tools/php-log/Logger.php 42] s
