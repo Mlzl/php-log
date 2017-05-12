@@ -1,6 +1,6 @@
-[INFO][2017-05-06][99700][/Users/ambi/project/php-log/Logger.php 42] i am info
-[DEBUG][2017-05-06][99700][/Users/ambi/project/php-log/Logger.php 42] i am debug
-[EXCEPTION][2017-05-06][99700][/Users/ambi/project/php-log/Logger.php 42] i am exception
-[ALERT][2017-05-06][99700][/Users/ambi/project/php-log/Logger.php 42] i am alert
-[ERROR][2017-05-06][99700][/Users/ambi/project/php-log/Logger.php 42] i am error
-[WARNING][2017-05-06][99700][/Users/ambi/project/php-log/Logger.php 42] i am warning
+[INFO][2017-05-12][97818][/Users/ambi/project/php-log/Logger.php 45] i am info
+[DEBUG][2017-05-12][97818][/Users/ambi/project/php-log/Logger.php 45] i am debug
+[EXCEPTION][2017-05-12][97818][/Users/ambi/project/php-log/Logger.php 45] i am exception
+[ALERT][2017-05-12][97818][/Users/ambi/project/php-log/Logger.php 45] i am alert
+[ERROR][2017-05-12][97818][/Users/ambi/project/php-log/Logger.php 45] i am error
+[WARNING][2017-05-12][97818][/Users/ambi/project/php-log/Logger.php 45] i am warning
