@@ -17,14 +17,16 @@ class Content{
     public function __toString()
     {
         $formatList = Formatter::FORMATTER;
-        $this->content = strtolower($this->formatter->getFormat());
-        foreach ($formatList as $_format){
-            if(stripos($this->content, $_format)){
+        $settingFormat = strtolower($this->formatter->getFormat());
+        $this->content = preg_replace_callback('(\%.*?\%)',function ($match)use($formatList){
+            if(in_array($match[0], $formatList)){
+                $_format = $match[0];
                 $method = trim($_format, Formatter::SPLIT);
                 $content = $this->$method;
-                $this->content = str_replace($_format, $content, $this->content);
+                return $content;
             }
-        }
+            return $match[0];
+        }, $settingFormat);
         return $this->content.PHP_EOL;
     }
     public function setData($data = array()){

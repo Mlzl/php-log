@@ -1,6 +1,27 @@
-[INFO][2017-05-12][97818][/Users/ambi/project/php-log/Logger.php 45] i am info
-[DEBUG][2017-05-12][97818][/Users/ambi/project/php-log/Logger.php 45] i am debug
-[EXCEPTION][2017-05-12][97818][/Users/ambi/project/php-log/Logger.php 45] i am exception
-[ALERT][2017-05-12][97818][/Users/ambi/project/php-log/Logger.php 45] i am alert
-[ERROR][2017-05-12][97818][/Users/ambi/project/php-log/Logger.php 45] i am error
-[WARNING][2017-05-12][97818][/Users/ambi/project/php-log/Logger.php 45] i am warning
+[INFO][2017-05-12][98121][/Users/ambi/project/php-log/Logger.php 60] i am 98121info
+[DEBUG][2017-05-12][98121][/Users/ambi/project/php-log/Logger.php 60] i am debug
+[EXCEPTION][2017-05-12][98121][/Users/ambi/project/php-log/Logger.php 60] i am exception
+[ALERT][2017-05-12][98121][/Users/ambi/project/php-log/Logger.php 60] i am alert
+[ERROR][2017-05-12][98121][/Users/ambi/project/php-log/Logger.php 60] i am error
+[WARNING][2017-05-12][98121][/Users/ambi/project/php-log/Logger.php 60] i am warning
+
+
+[WARNING][2017-05-12][98292][/Users/ambi/project/php-log/Logger.php 60] i am warning.start transaction but not submit
+[WARNING][2017-05-12][98305][/Users/ambi/project/php-log/Logger.php 60] i am warning.start %pid% transaction but not submit
+[][2017-05-12][98321][/Users/ambi/project/php-log/Logger.php 60] i am warning.start %pid% transaction but not submit
+[WARNING][2017-05-12][98337][/Users/ambi/project/php-log/Logger.php 60] i am warning.start %pid% transaction but not submit
+[%typsse%][2017-05-12][98349][/Users/ambi/project/php-log/Logger.php 60] i am warning.start %pid% transaction but not submit
+[INFO][2017-05-12][98399][/Users/ambi/project/php-log/Logger.php 60] i am %pid%info
+[DEBUG][2017-05-12][98399][/Users/ambi/project/php-log/Logger.php 60] i am debug
+[EXCEPTION][2017-05-12][98399][/Users/ambi/project/php-log/Logger.php 60] i am exception
+[ALERT][2017-05-12][98399][/Users/ambi/project/php-log/Logger.php 60] i am alert
+[ERROR][2017-05-12][98399][/Users/ambi/project/php-log/Logger.php 60] i am error
+[WARNING][2017-05-12][98399][/Users/ambi/project/php-log/Logger.php 60] i am warning
+
+
+[INFO][2017-05-12][98413][/Users/ambi/project/php-log/Logger.php 60] i am %pid%info
+[DEBUG][2017-05-12][98413][/Users/ambi/project/php-log/Logger.php 60] i am debug
+[EXCEPTION][2017-05-12][98413][/Users/ambi/project/php-log/Logger.php 60] i am exception
+[ALERT][2017-05-12][98413][/Users/ambi/project/php-log/Logger.php 60] i am alert
+[ERROR][2017-05-12][98413][/Users/ambi/project/php-log/Logger.php 60] i am error
+[WARNING][2017-05-12][98413][/Users/ambi/project/php-log/Logger.php 60] i am warning

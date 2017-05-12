@@ -12,7 +12,7 @@ function ss(){
     $formatter->setDateFormat('Y-m-d');
     $log->setFormatter($formatter);
     $log->startTransaction();
-    $log->info('i am info');
+    $log->info('i am %pid%info');
     $log->debug('i am debug');
     $log->exception('i am exception');
     $log->alert('i am alert');
@@ -20,7 +20,7 @@ function ss(){
     $log->warning('i am warning');
     $log->submit();
     $log->startTransaction();
-    $log->warning('i am warning.start transaction but not submit');
+    $log->warning('i am warning.start %pid% transaction but not submit');
 }
 
 ss();
